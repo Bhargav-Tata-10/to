@@ -14,8 +14,8 @@ cv=pickle.load(open('countvect (1).pkl','rb'))
 app = Flask(__name__)
 
 @app.route('/')
-#def home():
-#	return render_template('home.html')
+def home():
+	return render_template('index.html')
 
 @app.route('/predict',methods=['POST'])
 def predict():
